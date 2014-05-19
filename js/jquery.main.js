@@ -1,4 +1,4 @@
-var disqus_shortname   = 'philamplify'; // required: replace example with your forum shortname
+var disqus_shortname   = 'philamplifybee'; // required: replace example with your forum shortname
 var disqus_identifier; //made of post id and guid
 var disqus_url;
 var urlArray           = [];
