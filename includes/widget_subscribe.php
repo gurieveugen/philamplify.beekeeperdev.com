@@ -28,10 +28,8 @@ class Subscribe extends WP_Widget {
 		// =========================================================		
 		if($title != '') echo $before_title.$title.$after_title;
 		?>
-		<form action="#" class="form-signup form-subscribe-ajax">
-			<input type="email" placeholder="EMAIL ADDRESS" name="email" required>
-			<input type="hidden" value="<?php echo getIP(); ?>" name="ip">
-			<?php wp_nonce_field(AJAX::SUBSCRIBE_NONCE, 'security_subscribe'); ?>
+		<form action="<?php echo get_bloginfo('url'); ?>/salesforce_application/" method="GET" class="form-signup">
+			<input type="email" placeholder="EMAIL ADDRESS" name="email" required>			
 			<input type="submit" class="btn-dark-green" value="Subscribe">			
 		</form>
 		<?php

@@ -38,12 +38,10 @@
 						)); ?>						
 						<div class="form-logo-row cf">
 							<a href="<?php echo $ncrp_url; ?>" class="logo"><img src="<?php echo TDU; ?>/images/logo-ncrp.png" alt=""></a>
-							<form action="#" class="form-subscribe form-subscribe-ajax">
+							<form action="<?php echo get_bloginfo('url'); ?>/salesforce_application/" method="GET" class="form-subscribe">
 								<label>Subscribe to NCRP Newsletter</label>
 								<div class="cf">
-									<input type="email" placeholder="EMAIL ADDRESS" name="email">
-									<input type="hidden" value="<?php echo getIP(); ?>" name="ip">
-									<?php wp_nonce_field('subscribe-nonce', 'security'); ?>
+									<input type="email" placeholder="EMAIL ADDRESS" name="email">									
 									<input type="submit" value="SUBMIT">									
 								</div>
 							</form>
