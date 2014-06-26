@@ -24,8 +24,8 @@
 <!-- <html <?php language_attributes(); ?> itemscope itemtype="http://schema.org/Other"> -->
 <html itemscope itemtype="http://schema.org/Blog" >
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	
 	<title><?php echo $title; ?></title>
 
 
